@@ -20,3 +20,6 @@ addTask("Gym", "Low");
 addTask("Movie Night", "Medium");
 
 displayTasks();
+
+
+// this is a new comment
