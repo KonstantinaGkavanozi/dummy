@@ -28,7 +28,7 @@ function bubbleSort(arr) {
   }
   return arr;
 }
-
+const Konstantina = [];
 // ============================================
 // 2. SELECTION SORT
 // ============================================
