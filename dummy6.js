@@ -1,4 +1,3 @@
-
 // this is a new comment
 // 1. Data Structure: An array to hold our task objects
 let tasks = [];
