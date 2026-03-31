@@ -18,3 +18,4 @@ module.exports = { greet, sum };
 
 // This variable is declared but never used
 const unusedVariable = 'This variable is declared but never used';
+console.log("testing");
