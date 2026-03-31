@@ -15,3 +15,4 @@ if (require.main === module) {
 }
 
 module.exports = { greet, sum };
+const { greet, sum } = require('./NewTest');
