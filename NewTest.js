@@ -15,3 +15,5 @@ if (require.main === module) {
 }
 
 module.exports = { greet, sum };
+
+console.log('This script defines a greeting function and a sum function. You can run it with a name argument to see the greeting, or it will default to "World". The sum function can take any number of arguments and will return their total.');	
