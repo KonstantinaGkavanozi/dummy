@@ -16,3 +16,4 @@ if (require.main === module) {
 
 module.exports = { greet, sum };
 console.log('This is a simple JavaScript module with greeting and sum functions.');
+console.log('You can run this script with Node.js to see the output.');
