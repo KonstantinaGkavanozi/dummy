@@ -15,4 +15,3 @@ if (require.main === module) {
 }
 
 module.exports = { greet, sum };
-console.log('This is a simple JavaScript module with greeting and sum functions.');
