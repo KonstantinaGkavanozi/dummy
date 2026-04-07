@@ -67,5 +67,7 @@ async function runApplication() {
 // Start the app
 runApplication();
 
+console.log("testing using github ui");
+
 
 // this is a new comment
