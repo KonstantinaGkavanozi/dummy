@@ -63,6 +63,7 @@ async function runApplication() {
     // Finally, we display everything
     displayTasks();
 }
+console.log("trying");
 
 // Start the app
 runApplication();
