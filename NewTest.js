@@ -31,3 +31,5 @@ const longLine = 'This is a very long line that exceeds the typical 80 character
 const unusedVariable = 'This variable is declared but never used';
 const anotherUnusedVariable = 'This variable is also declared but never used';
 const yetAnotherUnusedVariable = 'This variable is also declared but never used';
+const oneMoreUnusedVariable = 'This variable is also declared but never used';
+const lastUnusedVariable = 'This variable is also declared but never used';
