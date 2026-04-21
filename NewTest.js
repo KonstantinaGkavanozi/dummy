@@ -15,3 +15,17 @@ if (require.main === module) {
 }
 
 module.exports = { greet, sum };
+
+// Introduce violations for testing
+function unusedFunction() {
+	console.log('This function is never used');
+}
+
+function anotherUnusedFunction() {
+	console.log('This function is also never used');
+}
+
+// Create a very long line
+const longLine = 'This is a very long line that exceeds the typical 80 character limit for code style guidelines, and it should trigger a violation in linters that enforce line length rules.';
+
+
