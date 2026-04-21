@@ -28,4 +28,6 @@ function anotherUnusedFunction() {
 // Create a very long line
 const longLine = 'This is a very long line that exceeds the typical 80 character limit for code style guidelines, and it should trigger a violation in linters that enforce line length rules.';
 
-
+const unusedVariable = 'This variable is declared but never used';
+const anotherUnusedVariable = 'This variable is also declared but never used';
+const yetAnotherUnusedVariable = 'This variable is also declared but never used';
