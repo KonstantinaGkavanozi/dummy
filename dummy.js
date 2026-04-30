@@ -69,3 +69,4 @@ runApplication();
 
 
 // this is a new comment
+const thisIsANewVariable = "This variable is not used anywhere, just for demonstration purposes.";
