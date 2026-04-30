@@ -66,5 +66,3 @@ async function runApplication() {
 
 // Start the app
 runApplication();
-
-console.log("This message appears immediately, demonstrating async behavior.");
