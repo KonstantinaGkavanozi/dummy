@@ -66,8 +66,3 @@ async function runApplication() {
 
 // Start the app
 runApplication();
-
-//this is new commit
-const newFeature = () => {
-    console.log("This is a new feature added in the latest commit!");
-}
