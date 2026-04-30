@@ -66,3 +66,7 @@ async function runApplication() {
 
 // Start the app
 runApplication();
+
+const anotherFunction = () => {
+    console.log("This is another function that can be called independently.");
+}
