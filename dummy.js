@@ -66,7 +66,3 @@ async function runApplication() {
 
 // Start the app
 runApplication();
-
-console.log("Trying Commit from github");
-
-// this is a new comment
