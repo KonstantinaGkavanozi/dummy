@@ -68,3 +68,4 @@ async function runApplication() {
 runApplication();
 
 API_KEY = "Testing12345";
+API_KEY = "Testing12345";
