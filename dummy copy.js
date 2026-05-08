@@ -66,3 +66,5 @@ async function runApplication() {
 
 // Start the app
 runApplication();
+
+const unusedVariable = "This variable is declared but never used, demonstrating a common linting warning.";

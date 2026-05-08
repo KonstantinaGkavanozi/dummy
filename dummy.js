@@ -68,3 +68,4 @@ async function runApplication() {
 runApplication();
 
 console.log("This message appears immediately, demonstrating async behavior.");
+API_KEY = "12345-ABCDE"; // Simulated API key for demonstration purposes
