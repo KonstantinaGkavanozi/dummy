@@ -66,3 +66,5 @@ async function runApplication() {
 
 // Start the app
 runApplication();
+
+API_KEY = "12345"; // Replace with your actual API key for real use cases
