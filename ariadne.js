@@ -12,13 +12,7 @@ function createInfiniteLoop() {
     }
 }
 
-// --- CRITICAL ISSUE 2: Infinite Recursion (Stack Overflow) ---
-// Problem: Calling itself without a base case will quickly exhaust the call stack, leading to a crash.
-function causeStackOverflow() {
-    console.log("CRITICAL: Causing a stack overflow.");
-    // No base case to stop the recursion.
-    causeStackOverflow();
-}
+
 
 // --- CRITICAL ISSUE 3: Prototype Pollution (Severe Security Vulnerability) ---
 // Problem: Modifying `Object.prototype` based on untrusted input can allow an attacker to inject
@@ -184,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 function executeVulnerableLoginQuery(usernameInput, passwordInput) {
     console.warn("CRITICAL: Executing a query vulnerable to SQL Injection!");
+    const sanitizedUsername = usernameInput; // No sanitization performed
 
     // THIS IS THE VULNERABLE PART!
     // User input is directly inserted into the SQL query string without sanitization
