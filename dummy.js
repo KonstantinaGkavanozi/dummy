@@ -67,5 +67,56 @@ async function runApplication() {
 // Start the app
 runApplication();
 
-console.log("This message appears immediately, demonstrating async behavior.");
-API_KEY = "12345-ABCDE"; // Simulated API key for demonstration purposes
+// 7. Function: Finds all prime numbers from 1 to 100
+function findPrimes() {
+    const primes = [];
+    for (let n = 2; n <= 100; n++) {
+        let isPrime = true;
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) primes.push(n);
+    }
+    return primes;
+}
+
+console.log("Primes from 1 to 100:", findPrimes());
+
+// 8. Function: Finds the square root of each number in an array
+function findSquareRoots(numbers) {
+    return numbers.map(n => ({ number: n, squareRoot: Math.sqrt(n) }));
+}
+
+console.log("Square roots:", findSquareRoots([4, 9, 16, 25, 36]));
+
+// 9. Function: Calculates the square of each number in an array
+function calculateSquares(numbers) {
+    return numbers.map(n => ({ number: n, square: n * n }));
+}
+
+console.log("Squares:", calculateSquares([1, 2, 3, 4, 5]));
+
+// --- FUNCTIONALITY TESTS ---
+
+// Test addTask adds a task with the correct title and priority
+addTask("Test Task", "Low");
+console.assert(tasks.find(t => t.title === "Test Task")?.priority === "Low", "FAIL: addTask priority mismatch");
+console.log("PASS: addTask correctly adds a task");
+
+// Test findPrimes returns known primes
+const primes = findPrimes();
+console.assert(primes.includes(2) && primes.includes(97) && !primes.includes(1) && !primes.includes(4), "FAIL: findPrimes result incorrect");
+console.log("PASS: findPrimes returns correct primes");
+
+// Test findSquareRoots returns correct values
+const sqrtResults = findSquareRoots([4, 9, 25]);
+console.assert(sqrtResults[0].squareRoot === 2 && sqrtResults[1].squareRoot === 3 && sqrtResults[2].squareRoot === 5, "FAIL: findSquareRoots result incorrect");
+console.log("PASS: findSquareRoots returns correct values");
+
+// Test calculateSquares returns correct values
+const squareResults = calculateSquares([3, 4, 5]);
+console.assert(squareResults[0].square === 9 && squareResults[1].square === 16 && squareResults[2].square === 25, "FAIL: calculateSquares result incorrect");
+console.log("PASS: calculateSquares returns correct values");
