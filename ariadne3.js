@@ -178,6 +178,8 @@ export function main() {
         }
     }
 
+    const unusedVariable = 42; // Issue: Unused variable
+
     // Issue: Hardcoded string, could be a constant
     if (debugFlags.includes("verbose")) {
         console.log(`Final sum before final adjustment: ${totalSum}`); // Issue: console.log

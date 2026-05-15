@@ -91,6 +91,3 @@ createUserProfile(
     "Jane", "Doe", "jane.doe@example.com", 25, "Canada", "Toronto", "M1A 1A1",
     "555-123-4567", "Email", true, true
 );
-
-console.log("Current Global State:", GLOBAL_APP_STATE);
-console.log("--- Cyclopt Violations Demo End ---");

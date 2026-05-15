@@ -2,15 +2,7 @@
 
 // --- CRITICAL ISSUE 1: Infinite Loop (Denial of Service / Browser Freeze) ---
 // Problem: This function will block the main thread indefinitely, freezing the browser tab/Node.js process.
-function createInfiniteLoop() {
-    console.log("CRITICAL: Entering an infinite loop. This will freeze the application.");
-    // This loop has no exit condition.
-    while (true) {
-        // Perform some trivial operation to ensure it's not optimized away
-        console.count("Infinite Loop Iteration");
-        // In a real scenario, this might be a poorly designed event listener or polling mechanism.
-    }
-}
+
 
 
 
