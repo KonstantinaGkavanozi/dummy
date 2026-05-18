@@ -120,3 +120,14 @@ console.log("PASS: findSquareRoots returns correct values");
 const squareResults = calculateSquares([3, 4, 5]);
 console.assert(squareResults[0].square === 9 && squareResults[1].square === 16 && squareResults[2].square === 25, "FAIL: calculateSquares result incorrect");
 console.log("PASS: calculateSquares returns correct values");
+
+console.log("All tests completed.");
+// This is a vc dummy file to test the functionality of the code execution environment. It includes various functions and tests to ensure that everything is working correctly.
+
+// Fibonnacci function to calculate the nth Fibonacci number
+function fibonacci(n) {
+    if (n <= 0) return 0;
+    if (n === 1) return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}  
+const unusuedVariable = "This variable is declared but never used.";
